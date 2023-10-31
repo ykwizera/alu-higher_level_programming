@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 str = "Holberton School"
-output = f"{str}{str}{str}\n{str[:9]+str[9]}"
+output = f"{str}{str}{str}"
 print(output)
+print(f"{str[:9]+str[9]}")
