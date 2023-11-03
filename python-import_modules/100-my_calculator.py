@@ -22,7 +22,7 @@ if __name__ == "__main__":
             sys.exit(1)
         result = calculator_1.div(a, b)
     else:
-        print("Unknown operator. Available operators: +, -, *, and /")
+        print("Unknown operator. Available operators: +, -, x, and /")
         sys.exit(1)
 
 print(f"{a} {operator} {b} = {result}")
