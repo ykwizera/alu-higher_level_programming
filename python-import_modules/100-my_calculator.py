@@ -15,12 +15,12 @@ if __name__ == "__main__":
         result = add(a, b)
     elif operator == "-":
         result = sub(a, b)
-    elif operator == "*":
+    elif operator == "x":
         result = mul(a, b)
     elif operator == "/":
         result = div(a, b)
     else:
-        print("Unknown operator. Available operators: +, -, *, /")
+        print("Unknown operator. Available operators: +, -, x, /")
         sys.exit(1)
 
     print("{} {} {} = {}".format(a, operator, b, result))
