@@ -6,5 +6,5 @@ def new_in_list(my_list, idx, element):
         x = my_list[:]
         new_element = element
         x[idx] = new_element
-        return x 
+        return x
     print("{:d}".format(my_list))
