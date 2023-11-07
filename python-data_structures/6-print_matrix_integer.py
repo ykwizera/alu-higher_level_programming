@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[]):
+    if matrix is None:
+        print(" ")
+        return
     for row in matrix:
         for i, element in enumerate(row):
             if i < len(row) - 1:
@@ -8,6 +11,3 @@ def print_matrix_integer(matrix=[]):
                 print("{:d}".format(element))
     if not matrix:
         print()
-    if matrix is None:
-        print (" ")
-        return
