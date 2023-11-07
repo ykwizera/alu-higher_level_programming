@@ -1,4 +1,7 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    if idx < 0 or idx >= int(len(my_list)):
+    if idx < 0 or idx >= len(my_list):
         print("none")
+    else:
+        x = my_list[idx]
+        return x
