@@ -7,4 +7,7 @@ def print_matrix_integer(matrix=[]):
             else:
                 print("{:d}".format(element))
     if not matrix:
-        print(" ")
+        print()
+    if matrix is None:
+        print (" ")
+        return
