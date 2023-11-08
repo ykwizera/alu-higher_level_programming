@@ -21,3 +21,5 @@ def roman_to_int(roman_string):
             sum_r += value
         var = value
     return sum_r
+   else:
+       return 0
