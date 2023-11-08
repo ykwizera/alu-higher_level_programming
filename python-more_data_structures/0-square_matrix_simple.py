@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     if matrix is None:
-        return
+        return []
     elif not matrix or all(not row for row in matrix):
-        print()
+        return []
     else:
         new_matrix = []
         for row in matrix:
