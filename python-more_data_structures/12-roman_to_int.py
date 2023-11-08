@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    if not isinstance(roman_string, str) or roman_string is None:
+        return 0
     roman_symbols = {
     'I' : 1,
     'V' : 5,
@@ -21,5 +23,3 @@ def roman_to_int(roman_string):
             sum_r += value
         var = value
     return sum_r
-   else:
-       return 0
