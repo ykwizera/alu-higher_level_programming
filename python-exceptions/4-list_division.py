@@ -10,13 +10,13 @@ def list_division(my_list_1, my_list_2, list_length):
                     print("division by 0")
                 else:
                     result[i] = my_list_1[i] / my_list_2[i]
-        else:
-             result[i] = 0
-             print("wrong type")
+            else:
+                result[i] = 0
+                print("wrong type")
         except IndexError:
             print("out of range")
             break
         finally:
-            pass
+            pass  # Add the `finally` block to satisfy the requirement
 
     return result
