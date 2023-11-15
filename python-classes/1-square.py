@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#square.py
+#size.py
 
 """
 this defines a suare by size
