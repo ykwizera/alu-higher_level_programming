@@ -1,11 +1,10 @@
 #!/usr/bin/python3
+# square.py
+"""
+this is my module
+"""
 class Square:
     """
-    python3 -c 'print(__import__("sides").Square.__doc__)'
+    this is my empty class called Square
     """
-    def sides(self):
-        """
-        python3 -c 'print(__import__("sides").__doc__)'
-        python3 -c 'print(__import__("sides").sides.__doc__)'
-        python3 -c 'print(__import__("my_"(sides").Square.sides.__doc__)'
-        """
+    pass
