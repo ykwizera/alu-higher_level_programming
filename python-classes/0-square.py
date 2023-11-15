@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 class Square:
-    python3 -c 'print(__import__("my_module").MyClass.__doc__)
-    pass
+    python3 -c 'print(__import__("my_module").MyClass.__doc__)'
+    def sides(self):
+        python3 -c 'print(__import__("my_module").__doc__)'
