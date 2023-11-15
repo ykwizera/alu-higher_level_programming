@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# 1_suare.py
+#square.py
 
 """
 this defines a suare by size
