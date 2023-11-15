@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# square.py
+# 1-square.py
 
 
 """
 
-this is my module
+This is my module
 
 """
 
