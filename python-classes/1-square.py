@@ -3,7 +3,7 @@
 
 
 """
-this defines a suare by size
+this is my module
 """
 
 
