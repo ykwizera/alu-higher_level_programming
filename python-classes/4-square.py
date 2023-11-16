@@ -29,7 +29,7 @@ class Square:
         """
         size module
         """
-        return get_size()
+        return self.get_size()
     def size(self, value):
         """
         size module 2
