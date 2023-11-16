@@ -6,6 +6,7 @@
 This is my module
 """
 
+
 class Square:
     """
     This is my class
