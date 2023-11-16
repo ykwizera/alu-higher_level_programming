@@ -25,16 +25,6 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-    def __init__(self, size=0):
-        """
-        initialising size
-        """
-        self.set_size(size)
-    def area(self):
-        """
-        Calculating the area using size
-        """
-        return self.__size * self.__size
     def size(self):
         """
         size module
@@ -45,3 +35,13 @@ class Square:
         size module 2
         """
         self.set_size(value)
+    def __init__(self, size=0):
+        """
+        initialising size
+        """
+        self.set_size(size)
+    def area(self):
+        """
+        Calculating the area using size
+        """
+        return self.__size * self.__size
