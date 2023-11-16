@@ -11,12 +11,12 @@ class Square:
     """
     This is my square class
     """
-    def get_size(self):
+    def size(self):
         """
         get function
         """
         return self.__size
-    def set_size(self, size):
+    def size(self, size):
         """
         set module
         """
@@ -35,14 +35,3 @@ class Square:
         Calculating the area using size
         """
         return self.__size * self.__size
-    def get_size(self):
-        """
-        Get size module
-        """
-        return self.__size
-
-    def set_size(self, value):
-        """
-        Set size module
-        """
-        self.__init__(value)
