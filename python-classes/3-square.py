@@ -24,4 +24,4 @@ class Square:
         """
         calculatung the area using size
         """
-        print("Area: {}".format(self.__size * self.__size))
+        print("{}".format(self.__size * self.__size))
