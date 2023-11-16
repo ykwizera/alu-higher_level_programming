@@ -8,6 +8,9 @@ This is my module
 
 
 class Square:
+    """
+    This is my square class
+    """
     def get_size(self):
         """
         get function
