@@ -35,11 +35,6 @@ class Square:
         Calculating the area using size
         """
         return self.__size * self.__size
-    def size(self):
-        """
-        size module
-        """
-        return self.get_size()
     def size(self, value):
         """
         size module 2
