@@ -1,37 +1,31 @@
 #!/usr/bin/python3
-# 4-square.py
-
-
-"""
-This is my module
-"""
+"""Create a square """
 
 
 class Square:
-    """
-    This is my square class
-    """
+    '''
+    Create a square
+        Has a private Instance att: size
+    '''
+
+    def __init__(self, size=0):
+        ''' init size '''
+        self.__size = size
+
+    @property
     def size(self):
-        """
-        get function
-        """
+        "returns the size att"
         return self.__size
+
+    @size.setter
     def size(self, size):
-        """
-        set module
-        """
+        '''asign the size to the size att'''
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-    def __init__(self, size=0):
-        """
-        initialising size
-        """
-        self.set_size(size)
+
     def area(self):
-        """
-        Calculating the area using size
-        """
-        return self.__size * self.__size
+        square_area = self.__size ** 2
+        return square_area
