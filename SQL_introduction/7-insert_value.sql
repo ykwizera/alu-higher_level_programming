@@ -1,2 +1,2 @@
 --inserting a new rowm
-INSERT INTO first_table (ID, name) VALUES (89, "Best School");
+INSERT INTO first_table VALUES (89, "Best School");
