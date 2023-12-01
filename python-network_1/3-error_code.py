@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""
+Python script that takes in a URL, sends a request, displays
+the value of the X-Request-Id variable found in the header,
+and handles HTTP errors.
+"""
 
 import sys
 from urllib import request, error
 
 def fetch_request_id(url):
+    """ function1"""
     try:
         with request.urlopen(url) as response:
             request_id = response.headers.get('X-Request-Id')
