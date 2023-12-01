@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-"""send request."""
+"""Documentation"""
+
 import urllib.request
 import urllib.error
 import sys
 
-
-def send_request():
-    """Send request."""
+if __name__ == '__main__':
+    """"Documented"""
+    url = sys.argv[1]
+    req = urllib.request.Request(url)
     try:
-        with urllib.request.urlopen(sys.argv[1]) as re:
-            xyz = re.read()
-            print(xyz.decode("utf-8"))
-    except urllib.error.HTTPError as err:
-        print("Error code: {}".format(err.code))
-
-if __name__ == "__main__":
-    send_request()
+        with urllib.request.urlopen(req) as response:
+            content = response.read()
+            print("{}".format(content.decode("utf-8")))
+    except urllib.error.HTTPError as e:
+        print("Error code: {}".format(e.code))
+    except urllib.error.URLError as e:
+        print(e.reason)
