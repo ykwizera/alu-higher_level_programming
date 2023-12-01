@@ -6,6 +6,7 @@ import urllib.error
 import sys
 
 def fetch_url_content(url):
+    """ module """
     try:
         with urllib.request.urlopen(url) as response:
             body = response.read().decode('utf-8')
