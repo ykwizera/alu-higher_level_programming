@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+"""Documentation"""
+
 import urllib.request
 import urllib.error
 import sys
