@@ -9,6 +9,7 @@ and handles HTTP errors.
 import sys
 from urllib import request, error
 
+
 def fetch_request_id(url):
     """ function"""
     try:
@@ -17,11 +18,12 @@ def fetch_request_id(url):
             if request_id:
                 return request_id
             else:
-                print("Error: No X-Request-Id header found")
+                print("Regular request")
                 return None
     except error.HTTPError as err:
         print('Error code: {}'.format(err.code))
         return None
+
 
 def main():
     if len(sys.argv) != 2:
