@@ -5,11 +5,11 @@ the value of the X-Request-Id variable found in the header,
 and handles HTTP errors.
 """
 
+
 import sys
 from urllib import request, error
 
 def fetch_request_id(url):
-    """ function1"""
     try:
         with request.urlopen(url) as response:
             request_id = response.headers.get('X-Request-Id')
@@ -32,3 +32,5 @@ if __name__ == "__main__":
 
     if request_id:
         print("X-Request-Id: {}".format(request_id))
+    else:
+        print("Failed to get X-Request-Id")
