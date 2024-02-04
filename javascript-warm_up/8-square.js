@@ -14,4 +14,3 @@ if (Number(args[0])) {
 } else {
   console.log('Missing size');
 }
-
